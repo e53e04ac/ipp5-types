@@ -19,6 +19,22 @@ export declare type Ipp5BackendApiEnvMap = {
     readonly CUSTOM_EXPRESS_TRUST_PROXY: string;
 };
 
+export declare type Ipp5BackendBatchEnvMap = {
+    readonly TZ: string;
+    readonly WEBSITES_PORT: number;
+    readonly CUSTOM_BACKEND_BATCH_URN: string;
+    readonly CUSTOM_BACKEND_BATCH_HTTP_PATH_PREFIX: string;
+    readonly CUSTOM_CONTAINER_BACKEND_MOUNT_PATH: string;
+    readonly CUSTOM_CONTAINER_BACKEND_BATCH_MOUNT_PATH: string;
+    readonly CUSTOM_BACKEND_BATCH_VAULT_NAME: string;
+    readonly CUSTOM_BACKEND_BATCH_ADLIBITUM_CLIENT_URN: string;
+    readonly CUSTOM_BACKEND_BATCH_ADLIBITUM_SERVER_URN: string;
+    readonly CUSTOM_BACKEND_BATCH_ADLIBITUM_CLIENT_PUBLIC_KEY: string;
+    readonly CUSTOM_EXPRESS_ENV: 'production' | 'development';
+    readonly CUSTOM_EXPRESS_SUBDOMAIN_OFFSET: number;
+    readonly CUSTOM_EXPRESS_TRUST_PROXY: string;
+};
+
 export declare type Ipp5BackendIdpEnvMap = {
     readonly TZ: string;
     readonly WEBSITES_PORT: number;
