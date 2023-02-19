@@ -27,11 +27,12 @@ graph RL;
     E_2(["type Ipp5BackendBatchEnvMap"]);
     E_3(["type Ipp5BackendIdpEnvMap"]);
     E_4(["type Ipp5BackendStaticEnvMap"]);
-    E_5(["type Ipp5SampleData<Value>"]);
-    E_6(["type Ipp5MenuData"]);
-    E_7(["type Ipp5YearlySummaryData"]);
-    E_8(["type Ipp5MonthlySummaryData"]);
-    E_9(["type Ipp5DailySummaryData"]);
+    E_5(["type Ipp5FrontendEnvMap"]);
+    E_6(["type Ipp5SampleData<Value>"]);
+    E_7(["type Ipp5MenuData"]);
+    E_8(["type Ipp5YearlySummaryData"]);
+    E_9(["type Ipp5MonthlySummaryData"]);
+    E_10(["type Ipp5DailySummaryData"]);
   end;
   M(["index.d.ts"])
   E_0 ----> M;
@@ -44,4 +45,5 @@ graph RL;
   E_7 ----> M;
   E_8 ----> M;
   E_9 ----> M;
+  E_10 ----> M;
 ~~~~~

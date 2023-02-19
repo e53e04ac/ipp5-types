@@ -64,6 +64,11 @@ export declare type Ipp5BackendStaticEnvMap = {
     readonly CUSTOM_EXPRESS_TRUST_PROXY: string;
 };
 
+export declare type Ipp5FrontendEnvMap = {
+    readonly TZ: string;
+    readonly WEBSITES_PORT: number;
+};
+
 export declare type Ipp5SampleData<Value> = {
     type: string;
     timeRangeType: string;
