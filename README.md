@@ -6,17 +6,21 @@ npm install e53e04ac/ipp5-types
 
 ~~~~~ mermaid
 graph RL;
-  A(["package.json"]);
+  A["package.json\npackage-lock.json"];
   subgraph "devDependencies";
     B_0(["@types/node"]);
   end;
+  subgraph "npmjs";
+    C_0(["@types/node\n18.14.1"]);
+  end;
   A ----> B_0;
-  click B_0 "https://www.npmjs.com/package/@types/node/v/18.14.1";
+  B_0 ----> C_0;
+  click C_0 "https://www.npmjs.com/package/@types/node/v/18.14.1";
 ~~~~~
 
 ~~~~~ mermaid
 graph RL;
-  M(["index.mjs"])
+  M["index.mjs"]
 ~~~~~
 
 ~~~~~ mermaid
@@ -34,7 +38,7 @@ graph RL;
     E_9(["type Ipp5MonthlySummaryData"]);
     E_10(["type Ipp5DailySummaryData"]);
   end;
-  M(["index.d.ts"])
+  M["index.d.ts"]
   E_0 ----> M;
   E_1 ----> M;
   E_2 ----> M;
