@@ -20,11 +20,6 @@ graph RL;
 
 ~~~~~ mermaid
 graph RL;
-  M["index.mjs"]
-~~~~~
-
-~~~~~ mermaid
-graph RL;
   subgraph "e53e04ac/ipp5-types";
     E_0(["type Unreadonly<T>"]);
     E_1(["type Ipp5BackendApiEnvMap"]);
@@ -50,4 +45,9 @@ graph RL;
   E_8 ----> M;
   E_9 ----> M;
   E_10 ----> M;
+~~~~~
+
+~~~~~ mermaid
+graph RL;
+  M["index.mjs"]
 ~~~~~
